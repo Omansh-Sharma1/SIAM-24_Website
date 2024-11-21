@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-black text-white pt-12 pb-6">
       <div className="container mx-auto px-8">
@@ -16,13 +18,13 @@ export default function Footer() {
           </div>
           <div className="font-playfair text-center md:text-right text-sm text-gray-400">
             <p>
-              © 2023 <Link to="/" className="hover:underline">SIAM-JUIT</Link> - All Rights Reserved.
+              © {currentYear} <Link to="/" className="hover:underline">SIAM-JUIT</Link> - All Rights Reserved.
             </p>
           </div>
         </div>
 
         {/* Main Navigation */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
           {/* Resources */}
           <div>
             <h3 className="text-2xl font-['Exo_2'] font-semibold text-white mb-4">Resources</h3>
@@ -39,10 +41,30 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Follow Us */}
+          {/* Social Media */}
           <div>
             <h3 className="text-2xl font-['Exo_2'] font-semibold text-white mb-4">Follow Us</h3>
             <ul className="font-roboto text-medium font-semibold space-y-4 text-gray-300">
+              <li>
+                <a
+                  href="https://www.instagram.com/siamjuit"
+                  className="hover:text-green-400 transition duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/siamjuit"
+                  className="hover:text-green-400 transition duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>
+              </li>
               <li>
                 <a
                   href="https://www.linkedin.com/company/siamjuit"
@@ -53,27 +75,6 @@ export default function Footer() {
                   LinkedIn
                 </a>
               </li>
-              <li>
-                {/* <Link to="https://www.instagram.com/siamjuit/" className="hover:text-yellow-400 transition duration-300" >Instagram</Link> */}
-                <a
-                  href="https://www.instagram.com/siamjuit/"
-                  className="hover:text-green-400 transition duration-300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li>
-              <a
-                  href="https://x.com/siamjuit"
-                  className="hover:text-green-400 transition duration-300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Twitter
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -82,7 +83,7 @@ export default function Footer() {
             <h3 className="text-2xl font-['Exo_2'] font-semibold text-white mb-4">Links</h3>
             <ul className="font-roboto text-medium font-semibold space-y-4 text-gray-300">
               <li>
-              <a
+                <a
                   href="https://www.siam.org/"
                   className="hover:text-green-400 transition duration-300"
                   target="_blank"
@@ -91,9 +92,6 @@ export default function Footer() {
                   Siam Global
                 </a>
               </li>
-              {/* <li>
-                <Link to="#" className="hover:text-yellow-400 transition duration-300">Terms & Conditions</Link>
-              </li> */}
             </ul>
           </div>
         </div>

@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { FlipWords } from "../ui/flip-words";
 import { motion, useAnimation } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 import { AnimatedTestimonials } from "../ui/animated-testimonials";
 import FocusCards from "../ui/focus-cards";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
@@ -47,6 +48,18 @@ export default function Home() {
         "Caltech is advancing interdisciplinary research in engineering, continuously pushing the boundaries of what is possible. Their work inspires future generations of scientists and engineers, fostering an environment of discovery and innovation that shapes the scientific landscape.",
     },
   ];
+
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+    triggerOnce: true
+  });
+
+  useEffect(() => {
+    if (inView) {
+      titleControls.start({ opacity: 1, y: 0 });
+      cardControls.start({ opacity: 1, x: 0 });
+    }
+  }, [inView, titleControls, cardControls]);
 
   const scrollToSection = (ref) => {
     if (ref && ref.current) {
@@ -225,19 +238,20 @@ export default function Home() {
       
       {/* About Section - Improved Mobile Responsiveness */}
       <div 
-        ref={aboutRef} 
-        className="min-h-screen bg-black text-white text-center py-12 px-4 sm:px-8 relative"
-      >
-        <div className="absolute top-0 left-0 w-1/2 h-px bg-gradient-to-r from-transparent to-green-500"></div>
-        <div className="absolute top-0 right-0 w-1/2 h-px bg-gradient-to-l from-transparent to-green-500"></div>
+ ref={aboutRef}
+ className="min-h-screen bg-black text-white text-center py-8 md:py-12 px-4 md:px-8 relative"
+>
+ <div className="absolute top-0 left-0 w-1/2 h-px bg-gradient-to-r from-transparent to-green-500"></div>
+ <div className="absolute top-0 right-0 w-1/2 h-px bg-gradient-to-l from-transparent to-green-500"></div>
+
         <motion.h2
           ref={titleRef}
-          className="text-2xl sm:text-4xl text-green-200 font-['Exo_2'] font-bold mb-8"
+          className="text-xl md:text-2xl lg:text-4xl text-green-200 font-['Exo_2'] font-bold mb-4 md:mb-8"
           initial={{ opacity: 0, y: 30 }}
           animate={titleControls}
           transition={{ duration: 0.5 }}
         >
-          <span style={{ fontSize: '160%' }}>Explore</span>
+          <span className="text-[120%] md:text-[140%] lg:text-[160%]">Explore</span>
         </motion.h2>
         <div className="mt-8 sm:mt-12">
           <FocusCards cards={focusCardsData} />
@@ -246,28 +260,28 @@ export default function Home() {
 
       {/* Mission Section - Mobile Responsiveness */}
       <div 
-        ref={missionRef} 
-        className="min-h-screen bg-black text-white text-center py-12 px-4 sm:px-8 relative"
+        ref={missionRef}
+        className="min-h-screen bg-black text-white text-center py-8 md:py-12 px-4 md:px-8 relative"
       >
         <div className="absolute top-0 left-0 w-1/2 h-px bg-gradient-to-r from-transparent to-green-500"></div>
         <div className="absolute top-0 right-0 w-1/2 h-px bg-gradient-to-l from-transparent to-green-500"></div>
         <motion.h2
-          className="text-2xl sm:text-4xl font-['Exo_2'] text-green-200 font-bold mb-8"
+          className="text-xl md:text-2xl lg:text-4xl text-green-200 font-['Exo_2'] font-bold mb-4 md:mb-8"
           initial={{ opacity: 0, y: 30 }}
           animate={titleControls}
           transition={{ duration: 0.5 }}
         >
-          <span style={{ fontSize: '160%' }}>Our Mission</span>
+          <span className="text-[120%] md:text-[140%] lg:text-[160%]">Our Mission</span>
         </motion.h2>
         <motion.div
-          className="container mx-auto"
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: -100 }}
           animate={cardControls}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8 }}
+          className="w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8"
         >
           <HoverEffect 
             items={cardItems} 
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 sm:px-0" 
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8" 
           />
         </motion.div>
       </div>
@@ -275,20 +289,20 @@ export default function Home() {
       {/* Testimonials Section - Mobile Responsiveness */}
       <div 
         ref={testimonialsRef} 
-        className="min-h-screen bg-black text-white text-center py-12 px-4 sm:px-8 relative"
+        className="min-h-screen bg-black text-white text-center py-12 px-4 md:px-8 relative"
       >
         {/* Green Stylish Div Added Here */}
         <div className="absolute top-0 left-0 w-1/2 h-px bg-gradient-to-r from-transparent to-green-500"></div>
         <div className="absolute top-0 right-0 w-1/2 h-px bg-gradient-to-l from-transparent to-green-500"></div>
         <motion.h2
-          className="text-2xl sm:text-4xl font-['Exo_2'] text-green-200 font-bold mb-8"
+          className="text-xl md:text-2xl lg:text-4xl text-green-200 font-['Exo_2'] font-bold mb-4 md:mb-8"
           initial={{ opacity: 0, y: 30 }}
           animate={titleControls}
           transition={{ duration: 0.5 }}
         >
-          <span style={{ fontSize: '160%' }}>Collaborations</span>
+          <span className="text-[120%] md:text-[140%] lg:text-[160%]">Collaborations</span>
         </motion.h2>
-        <div className="mt-8 sm:mt-12">
+        <div className="mt-4 md:mt-8 lg:mt-12">
           <AnimatedTestimonials
             testimonials={[
               {
@@ -320,19 +334,19 @@ export default function Home() {
         </div>
         <div className="mt-12 sm:mt-16">
           <motion.h2
-            className="text-2xl sm:text-4xl font-['Exo_2'] text-green-200 font-bold mb-8"
+            className="text-xl md:text-2xl lg:text-4xl text-green-200 font-['Exo_2'] font-bold mb-4 md:mb-8"
             initial={{ opacity: 0, y: 30 }}
             animate={titleControls}
             transition={{ duration: 0.5 }}
           >
-            <span style={{ fontSize: '160%' }}>Testimonials</span>
+            <span className="text-[120%] md:text-[140%] lg:text-[160%]">Testimonials</span>
           </motion.h2>
           <InfiniteMovingCards 
             items={infiniteTestimonials} 
             direction="left" 
             speed="normal" 
             pauseOnHover={true} 
-            className="px-4 sm:px-0"
+            className="w-full overflow-hidden"
           />
         </div>
       </div>

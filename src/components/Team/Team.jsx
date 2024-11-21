@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Team = () => {
   const [expandedCard, setExpandedCard] = useState(null);
@@ -17,56 +17,68 @@ const Team = () => {
       name: "Anant Sharma",
       role: "President",
       description: "Some Description",
-      detailedDescription: "Detailed information about Anant Sharma goes here."
+      detailedDescription: "Detailed information about Anant Sharma goes here.",
+      image: "/team-member-1.jpeg",
     },
     {
       name: "Parth Gupta",
       role: "Vice President",
       description: "Some Description",
-      detailedDescription: "Detailed information about Parth Gupta goes here."
+      detailedDescription: "Detailed information about Parth Gupta goes here.",
+      image: "/team-member-2.jpg",
     },
     {
       name: "Vasu Bhatia",
       role: "Secretary",
       description: "Some Description",
-      detailedDescription: "Detailed information about Vasu Bhatia goes here."
+      detailedDescription: "Detailed information about Vasu Bhatia goes here.",
+      image: "/team-member-3.jpeg",
     },
     {
       name: "Srishti Gupta",
       role: "Joint Secretary",
       description: "Some Description",
-      detailedDescription: "Detailed information about Srishti Gupta goes here."
+      detailedDescription:
+        "Detailed information about Srishti Gupta goes here.",
+      image: "/team-member-4.jpg",
     },
     {
       name: "Naman Mittal",
       role: "Treasurer",
       description: "Some Description",
-      detailedDescription: "Detailed information about Naman Mittal goes here."
+      detailedDescription: "Detailed information about Naman Mittal goes here.",
+      image: "/team-member-5.jpeg",
     },
     {
       name: "Naman Tomar",
       role: "Web Master",
       description: "Some Description",
-      detailedDescription: "Detailed information about Naman Tomar goes here."
+      detailedDescription: "Detailed information about Naman Tomar goes here.",
+      image: "/team-member-6.jpeg",
     },
     {
       name: "Bhavya Sharma",
       role: "Research Head",
       description: "Some Description",
-      detailedDescription: "Detailed information about Bhavya Sharma goes here."
+      detailedDescription:
+        "Detailed information about Bhavya Sharma goes here.",
+      image: "/team-member-7.jpeg",
     },
     {
       name: "Chaitanya Anchal",
       role: "Public Relations Head",
       description: "Some Description",
-      detailedDescription: "Detailed information about Chaitanya Anchal goes here."
+      detailedDescription:
+        "Detailed information about Chaitanya Anchal goes here.",
+      image: "/team-member-8.jpeg",
     },
     {
       name: "Ashmi Sharma",
       role: "Operations Manager",
       description: "Some Description",
-      detailedDescription: "Detailed information about Ashmi Sharma goes here."
-    }
+      detailedDescription: "Detailed information about Ashmi Sharma goes here.",
+      image: "/team-member-9.jpeg",
+    },
   ];
 
   return (
@@ -90,12 +102,16 @@ const Team = () => {
 
         {/* Paragraph */}
         <p className="text-medium font-semibold mt-8 font-roboto">
-          Our team is dedicated to making a difference by providing resources, support, and opportunities for students and educators to learn and grow. We are committed to fostering a culture of inclusivity, respect, and open communication. We are passionate about what we do, and we are excited to share our vision with you.
+          Our team is dedicated to making a difference by providing resources,
+          support, and opportunities for students and educators to learn and
+          grow. We are committed to fostering a culture of inclusivity, respect,
+          and open communication. We are passionate about what we do, and we are
+          excited to share our vision with you.
         </p>
 
         {/* Title: Founding Faculty Advisor */}
         <div className="font-['Exo_2'] font-semibold text-center mt-12">
-          <span style={{ fontSize: '160%' }}>Founding Faculty Advisor</span>
+          <span style={{ fontSize: "160%" }}>Founding Faculty Advisor</span>
           <div className="w-1/4 h-px bg-gradient-to-r from-green-400 to-green-600 mx-auto"></div>
         </div>
 
@@ -113,27 +129,26 @@ const Team = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src="team-member-0.jpg"
-              alt="0"
+              src="/Vivek-Sir.jpeg"
+              alt="Prof. (DR.) Vivek Kumar Sehgal"
               className="w-full h-48 object-cover rounded-t-lg"
             />
             <h3 className="text-xl font-semibold mt-4 font-['Exo_2']">
               Prof. (DR.) Vivek Kumar Sehgal
             </h3>
-            <p className="text-gray-400 font-['Exo_2']">Professor & Head of Dept. of CSE&IT</p>
+            <p className="text-gray-400 font-['Exo_2']">
+              Professor & Head of Dept. of CSE&IT
+            </p>
             <p className="mt-2 text-gray-300 font-['Exo_2'] text-sm">
-              "As the Founding Faculty Advisor, Prof. Sehgal is instrumental...
+              " as the Founding Faculty Advisor, has played a
+              pivotal role...
             </p>
 
             {/* Hover Gradient & Icons */}
             <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent rounded-br-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
               <div className="absolute bottom-0 left-0 p-4 flex gap-4 items-center">
                 <a href="https://www.linkedin.com/">
-                  <img
-                    src="linkedin.png"
-                    alt="LinkedIn"
-                    className="w-8 h-8"
-                  />
+                  <img src="linkedin.png" alt="LinkedIn" className="w-8 h-8" />
                 </a>
                 <a href="mailto:info@yourdomain.com">
                   <img src="gmail.png" alt="Email" className="w-8 h-8" />
@@ -165,7 +180,11 @@ const Team = () => {
                   Prof. (DR.) Vivek Kumar Sehgal
                 </h2>
                 <p className="justify-center text-medium font-semibold font-['Exo_2'] mb-6">
-                "Prof. Sehgal, as the Founding Faculty Advisor, has played a pivotal role in shaping the department's vision and fostering a culture of excellence. His leadership and dedication have been instrumental in driving the department towards achieving new heights."
+                  "Prof. Sehgal, as the Founding Faculty Advisor, has played a
+                  pivotal role in shaping the department's vision and fostering
+                  a culture of excellence. His leadership and dedication have
+                  been instrumental in driving the department towards achieving
+                  new heights."
                 </p>
 
                 {/* Close Button */}
@@ -188,9 +207,8 @@ const Team = () => {
 
         {/* Title: Officers 24-25 */}
         <div className="font-['Exo_2'] font-semibold text-center mt-12">
-          <span style={{ fontSize: '160%' }}>Officers 24-25</span>
-          <div className="w-1/4 h-px bg-gradient-to-r from-green-400 to-green-600 mx-auto">
-          </div>
+          <span style={{ fontSize: "160%" }}>Council 24-25</span>
+          <div className="w-1/4 h-px bg-gradient-to-r from-green-400 to-green-600 mx-auto"></div>
         </div>
 
         {/* Grid of Other Cards */}
@@ -211,8 +229,8 @@ const Team = () => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
               <img
-                src={`team-member-${index + 1}.jpg`}
-                alt={`Team Member ${index + 1}`}
+                src={member.image}
+                alt={member.name}
                 className="w-full h-48 object-cover rounded-t-lg"
               />
               <h3 className="text-xl font-semibold mt-4 font-['Exo_2']">
@@ -226,21 +244,23 @@ const Team = () => {
               {/* Hover Gradient & Icons */}
               <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent rounded-br-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 p-4 flex gap-4 items-center">
-                  <a href="https://www.linkedin.com/"
-                  target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src="linkedin.png"
                       alt="LinkedIn"
                       className="w-8 h-8"
                     />
                   </a>
-                  <a href="mailto:info@yourdomain.com"
-                  target="_blank" rel="noopener noreferrer">
-                    <img
-                      src="gmail.png"
-                      alt="Email"
-                      className="w-8 h-8"
-                    />
+                  <a
+                    href="mailto:info@yourdomain.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="gmail.png" alt="Email" className="w-8 h-8" />
                   </a>
                 </div>
 
