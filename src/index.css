@@ -1,0 +1,64 @@
+/* Add this to your index.css or App.css */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Josefin+Sans:wght@700&display=swap');
+
+
+
+/* Tailwind base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure full height */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: black; /* Black background for the entire body */
+  font-family: 'Roboto', sans-serif; /* Set Roboto as the default font */
+}
+
+/* Ensure black background fills the full screen */
+.fixed-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: -1; /* Set z-index to -1 to ensure the background is behind other content */
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset margin and padding for the root content to prevent any unwanted gaps */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Optional: Ensures no gap between header/footer and content */
+main {
+  flex-grow: 1;
+}
+
+/* Optional: Ensures footer stays at the bottom */
+footer {
+  position: relative;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Override specific font for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; /* Set Poppins for headings */
+}

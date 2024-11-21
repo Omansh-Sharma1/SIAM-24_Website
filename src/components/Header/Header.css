@@ -1,0 +1,34 @@
+/* Header.css */
+
+/* Apply Playfair Display to text content */
+body, .text-content, .text-gray-300 {
+  font-family: 'roboto';
+}
+
+/* Apply Roboto to all headings */
+h1, h2, h3, h4, h5, h6, .font-Exo 2 {
+  font-family: 'Exo 2';
+}
+
+/* Ensure the navigation bar font is unchanged or use specific font-sans for nav links */
+.nav-links {
+  font-family: 'Exo 2';
+  position: relative; /* To position the underline */
+  display: inline-block; /* Ensures underline is positioned relative to text */
+}
+
+/* Add hover animation */
+.nav-links::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background: linear-gradient(to right, #00ff00, #00cc00); /* Green gradient */
+  transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+
+.nav-links:hover::after {
+  width: 100%; /* Expands the underline to the full width on hover */
+}

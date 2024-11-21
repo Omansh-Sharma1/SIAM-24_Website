@@ -1,0 +1,100 @@
+/* Container for the IconGrid */
+.icon-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+  gap: 30px; /* Space between cards */
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: none; /* Fully transparent container */
+}
+
+/* Entry Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Individual card (icon item) */
+.icon-item {
+  text-align: center;
+  padding: 60px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Slight card background transparency */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  cursor: pointer;
+  animation: fadeIn 0.4s ease-in forwards; /* Fade-in animation */
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  width: 100%;
+  max-width: 350px; /* Uniform card size */
+  backdrop-filter: blur(5px); /* Frosted glass effect */
+}
+
+/* Hover effect on icon item */
+.icon-item:hover {
+  transform: translateY(-15px) translateY(15px)scale(1.05); /* Lift up */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+  background: rgba(255, 255, 255, 0.15); /* Slightly brighter on hover */
+}
+
+/* Reverse hover effect on label text */
+.icon-item:active {
+  transform: translateY(15px) scale(1); /* Push down */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Reduced shadow */
+}
+
+/* Icon styling */
+.icon {
+  width: 100px; /* Larger icon */
+  height: 100px;
+  margin-bottom: 15px;
+  filter: brightness(1); /* Ensure icons appear sharp */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect on the icon */
+.icon-item:hover .icon {
+  transform: scale(1.2); /* Slightly grow the icon */
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); /* Neutral glowing effect */
+}
+
+/* Label text styling */
+.icon-label {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9); /* Bright, neutral text */
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect on label text */
+.icon-item:hover .icon-label {
+  color: rgba(255, 255, 255, 1); /* Brighter on hover */
+  transform: translateY(5px); /* Gentle lift */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .icon-grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-grid-container {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+
+  .icon-item {
+    padding: 30px; /* Adjust padding for smaller screens */
+  }
+}
