@@ -19,6 +19,8 @@ const Team = () => {
       description: "Some Description",
       detailedDescription: "Detailed information about Anant Sharma goes here.",
       image: "/team-member-1.jpeg",
+      email: "",
+      linkedin: "https://www.linkedin.com/in/anant-sharma-/"
     },
     {
       name: "Parth Gupta",
@@ -26,6 +28,8 @@ const Team = () => {
       description: "Some Description",
       detailedDescription: "Detailed information about Parth Gupta goes here.",
       image: "/team-member-2.jpg",
+      email: "",
+      linkedin: "https://www.linkedin.com/in/-parth-gupta-/"
     },
     {
       name: "Vasu Bhatia",
@@ -33,14 +37,18 @@ const Team = () => {
       description: "Some Description",
       detailedDescription: "Detailed information about Vasu Bhatia goes here.",
       image: "/team-member-3.jpeg",
+      email: "",
+      linkedin: "https://www.linkedin.com/in/vasubhatia16/"
     },
     {
       name: "Srishti Gupta",
       role: "Joint Secretary",
       description: "Some Description",
       detailedDescription:
-        "Detailed information about Srishti Gupta goes here.",
-      image: "/team-member-4.jpg",
+      "Detailed information about Srishti Gupta goes here.",
+      image: "/team-member-4.jpeg",
+      email: "",
+      linkedin: "https://www.linkedin.com/in/srishti-gupta-6b1886293/"
     },
     {
       name: "Naman Mittal",
@@ -48,6 +56,8 @@ const Team = () => {
       description: "Some Description",
       detailedDescription: "Detailed information about Naman Mittal goes here.",
       image: "/team-member-5.jpeg",
+      email: "",
+      linkedin: "https://www.linkedin.com/in/naman--mittal/"
     },
     {
       name: "Naman Tomar",
@@ -55,22 +65,28 @@ const Team = () => {
       description: "Some Description",
       detailedDescription: "Detailed information about Naman Tomar goes here.",
       image: "/team-member-6.jpeg",
+      email: "",
+      linkedin: "https://www.linkedin.com/in/navoren/"
     },
     {
       name: "Bhavya Sharma",
       role: "Research Head",
       description: "Some Description",
       detailedDescription:
-        "Detailed information about Bhavya Sharma goes here.",
+      "Detailed information about Bhavya Sharma goes here.",
       image: "/team-member-7.jpeg",
+      email: "",
+      linkedin: "https://www.linkedin.com/in/bhavya-sharma-238620255/"
     },
     {
       name: "Chaitanya Anchal",
       role: "Public Relations Head",
       description: "Some Description",
       detailedDescription:
-        "Detailed information about Chaitanya Anchal goes here.",
+      "Detailed information about Chaitanya Anchal goes here.",
       image: "/team-member-8.jpeg",
+      email: "",
+      linkedin: "https://www.linkedin.com/in/chaitanya-anchal/"
     },
     {
       name: "Ashmi Sharma",
@@ -78,6 +94,8 @@ const Team = () => {
       description: "Some Description",
       detailedDescription: "Detailed information about Ashmi Sharma goes here.",
       image: "/team-member-9.jpeg",
+      email: "",
+      linkedin: "https://www.linkedin.com/in/ashmi-sharma42/"
     },
   ];
 
@@ -147,10 +165,10 @@ const Team = () => {
             {/* Hover Gradient & Icons */}
             <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent rounded-br-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
               <div className="absolute bottom-0 left-0 p-4 flex gap-4 items-center">
-                <a href="https://www.linkedin.com/">
+                <a href="https://www.linkedin.com/in/vivekkumarsehgal/">
                   <img src="linkedin.png" alt="LinkedIn" className="w-8 h-8" />
                 </a>
-                <a href="mailto:info@yourdomain.com">
+                <a href="mailto:vivek.sehgal@juitsolan.in">
                   <img src="gmail.png" alt="Email" className="w-8 h-8" />
                 </a>
               </div>
@@ -245,7 +263,7 @@ const Team = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent rounded-br-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 p-4 flex gap-4 items-center">
                   <a
-                    href="https://www.linkedin.com/"
+                    href={member.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -256,9 +274,7 @@ const Team = () => {
                     />
                   </a>
                   <a
-                    href="mailto:info@yourdomain.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${member.email}&su=Hello%20${member.name}&body=Hi%20${member.name},`} target="_blank" rel="noopener noreferrer"
                   >
                     <img src="gmail.png" alt="Email" className="w-8 h-8" />
                   </a>

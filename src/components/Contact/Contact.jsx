@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from 'emailjs-com';
 
 // Inline SVG Icons with responsive sizes
 const UserIcon = () => (
@@ -32,19 +33,44 @@ const SendIcon = () => (
 
 export default function ContactRedesigned() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    from_name: '',
+    message: '',
+    from_email: ''
   });
+
+  const [notification, setNotification] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
-    // Handle form submission
+
+    emailjs.sendForm('service_z752c1j', 'template_xfctjx8', e.target, 'HTgZP7zAFTU1rTdzE')
+      .then((result) => {
+          console.log(result.text);
+          setNotification('Message sent successfully!');
+      }, (error) => {
+          console.log(error.text);
+          setNotification('Failed to send message. Please try again.');
+      });
+
+    setFormData({
+      from_name: '',
+      message: '',
+      from_email: ''
+    });
+
+    setTimeout(() => {
+      setNotification('');
+    }, 5000); // Clear notification after 5 seconds
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white py-8 md:py-16 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen bg-black text-white flex items-center justify-center py-8 md:py-16 px-4 md:px-8 relative">
+      <div className="background-image"></div>
+      <div className="max-w-6xl mx-auto w-full z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -59,9 +85,16 @@ export default function ContactRedesigned() {
           </p>
         </motion.div>
 
+        {notification && (
+          <div className="text-center mb-4 text-green-400">
+            {notification}
+          </div>
+        )}
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Contact Form */}
           <motion.form 
+            id="form"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -74,8 +107,10 @@ export default function ContactRedesigned() {
               </div>
               <input
                 type="text"
-                name="name"
+                name="from_name"
                 placeholder="Your Name"
+                value={formData.from_name}
+                onChange={handleChange}
                 className="w-full pl-10 pr-4 py-2 md:py-3 bg-gray-900 rounded-lg focus:ring-2 focus:ring-green-500 outline-none transition-colors duration-300"
                 required
               />
@@ -87,8 +122,10 @@ export default function ContactRedesigned() {
               </div>
               <input
                 type="email"
-                name="email"
+                name="from_email"
                 placeholder="Your Email"
+                value={formData.from_email}
+                onChange={handleChange}
                 className="w-full pl-10 pr-4 py-2 md:py-3 bg-gray-900 rounded-lg focus:ring-2 focus:ring-green-500 outline-none transition-colors duration-300"
                 required
               />
@@ -99,6 +136,8 @@ export default function ContactRedesigned() {
                 name="message"
                 placeholder="Your Message"
                 rows="4"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full px-4 py-2 md:py-3 bg-gray-900 rounded-lg focus:ring-2 focus:ring-green-500 outline-none transition-colors duration-300"
                 required
               />
@@ -106,9 +145,10 @@ export default function ContactRedesigned() {
 
             <button
               type="submit"
+              id="button"
               className="w-full flex items-center justify-center space-x-2 bg-green-600 hover:bg-green-700 text-white py-2 md:py-3 px-6 rounded-lg transition duration-300"
             >
-              <span>Send Message</span>
+              <span>Send Email</span>
               <SendIcon />
             </button>
           </motion.form>
@@ -125,7 +165,7 @@ export default function ContactRedesigned() {
               <div className="flex-1">
                 <h3 className="text-lg md:text-xl font-semibold mb-2">Location</h3>
                 <p className="text-sm md:text-base text-gray-400">
-                  Jaypee University of Information Technology, Waknaghat, 173234, Solan, Himachal Pradesh, India
+                  Jaypee University of Information Technology, Waknaghat - 173234, Solan, India
                 </p>
               </div>
             </div>
@@ -135,11 +175,14 @@ export default function ContactRedesigned() {
               <div className="flex-1">
                 <h3 className="text-lg md:text-xl font-semibold mb-2">Email</h3>
                 <div className="space-y-2">
-                  <a href="mailto:siamchapter@juitsolan.in" className="text-sm md:text-base text-gray-400 hover:text-green-400 transition duration-300 block">
-                    siamchapter@juitsolan.in
+                  <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=siam@juitsolan.in&su=Hello%20SIAM-JUIT,`} target="_blank" rel="noopener noreferrer" className="text-sm md:text-base text-gray-400 hover:text-green-400 transition duration-300 block">
+                  siam@juitsolan.in
                   </a>
-                  <a href="mailto:president@juitsolan.in" className="text-sm md:text-base text-gray-400 hover:text-green-400 transition duration-300 block">
-                    president@juitsolan.in
+                  <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=presidentsiam@juitsolan.in&su=Hello%20president%20@SIAM-JUIT,`} target="_blank" rel="noopener noreferrer" className="text-sm md:text-base text-gray-400 hover:text-green-400 transition duration-300 block">
+                  presidentsiam@juitsolan.in
+                  </a>
+                  <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=siam-council-2024@juitsolan.in&su=Hello%20council%20@SIAM-JUIT,`} target="_blank" rel="noopener noreferrer" className="text-sm md:text-base text-gray-400 hover:text-green-400 transition duration-300 block">
+                  siam-council-2024@juitsolan.in
                   </a>
                 </div>
               </div>
