@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export const AnimatedImageCarousel = ({ 
   images, 
-  transitionDuration = 1.5,
-  intervalDuration = 5
+  transitionDuration = 2,
+  intervalDuration = 6
 }) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [direction, setDirection] = useState(1);
@@ -14,7 +14,7 @@ export const AnimatedImageCarousel = ({
     const interval = setInterval(() => {
       setDirection(1);
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, intervalDuration * 1000);
+    }, intervalDuration * 3000);
 
     return () => clearInterval(interval);
   }, [images, intervalDuration]);
