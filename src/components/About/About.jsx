@@ -316,24 +316,34 @@ export default function About() {
   {/* Events Timeline */}
   <div className="font-['Exo_2'] text-green-200 relative border-l-4 border-green-500">
     {[
-      {
-        title: "Workshop on Data Science",
-        date: "Dec 10, 2023",
-        description: "An in-depth workshop on data science techniques and tools.",
-        img: "workshop_image.jpg",
-      },
-      {
-        title: "Annual SIAM Conference",
-        date: "Jan 15, 2024",
-        description: "Network with professionals and attend sessions on applied mathematics.",
-        img: "conference_image.jpg",
-      },
-      {
-        title: "AI and Machine Learning Symposium",
-        date: "Feb 20, 2024",
-        description: "Explore the latest trends and research in AI and ML.",
-        img: "symposium_image.jpg",
-      },
+     {
+      title: "Project Euler",
+      date: "Mar 5, 2024",
+      description:
+        "Challenge your mathematical and programming skills with complex computational problems.",
+      img: "project_euler.jpg", // Replace with your actual image path or URL
+    },
+    {
+      title: "Auctionomics",
+      date: "Mar 15, 2024",
+      description:
+        "Learn and participate in auctions with real-world economic scenarios.",
+      img: "auctionomics.jpg", // Replace with your actual image path or URL
+    },
+    {
+      title: "Distinguished Speaker Seminar Series",
+      date: "Mar 25, 2024",
+      description:
+        "Engage with experts discussing cutting-edge research and innovation.",
+      img: "speaker_seminar.jpg", // Replace with your actual image path or URL
+    },
+    {
+      title: "Mathemagical Hacks",
+      date: "Apr 5, 2024",
+      description:
+        "Combine your mathematical brilliance and coding prowess in this hackathon.",
+      img: "mathemagical_hacks.jpg", // Replace with your actual image path or URL
+    },
     ].map((event, index) => (
       <motion.div
         key={index}
