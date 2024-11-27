@@ -16,88 +16,95 @@ const Team = () => {
     {
       name: "Anant Sharma",
       role: "President",
-      description: "Some Description",
-      detailedDescription: "Detailed information about Anant Sharma goes here.",
-      image: "/team-member-1.jpeg",
-      email: "",
+      description: "Leading with vision and purpose.",
+      detailedDescription:
+        "Anant Sharma has been instrumental in fostering a culture of innovation and collaboration. His leadership skills and strategic thinking drive the organization towards achieving its goals.",
+      image: "/Anant.jpg",
+      email: "anant.sharma@example.com",
       linkedin: "https://www.linkedin.com/in/anant-sharma-/"
     },
     {
       name: "Parth Gupta",
       role: "Vice President",
-      description: "Some Description",
-      detailedDescription: "Detailed information about Parth Gupta goes here.",
+      description: "Empowering the team with excellence.",
+      detailedDescription:
+        "Parth Gupta excels in operations and planning, ensuring seamless execution of all initiatives. His ability to inspire and motivate the team is unparalleled.",
       image: "/team-member-2.jpg",
-      email: "",
+      email: "parth.gupta@example.com",
       linkedin: "https://www.linkedin.com/in/-parth-gupta-/"
     },
     {
       name: "Vasu Bhatia",
       role: "Secretary",
-      description: "Some Description",
-      detailedDescription: "Detailed information about Vasu Bhatia goes here.",
+      description: "Organized and efficient.",
+      detailedDescription:
+        "Vasu Bhatia ensures the smooth functioning of all administrative activities. With a keen eye for detail, Vasu plays a crucial role in documenting and managing team activities.",
       image: "/team-member-3.jpeg",
-      email: "",
+      email: "vasu.bhatia@example.com",
       linkedin: "https://www.linkedin.com/in/vasubhatia16/"
     },
     {
       name: "Srishti Gupta",
       role: "Joint Secretary",
-      description: "Some Description",
+      description: "Collaborative and dynamic.",
       detailedDescription:
-      "Detailed information about Srishti Gupta goes here.",
+        "Srishti Gupta is known for her proactive approach and dedication. She works closely with the team to ensure all projects are executed with precision and efficiency.",
       image: "/team-member-4.jpeg",
-      email: "",
+      email: "srishti.gupta@example.com",
       linkedin: "https://www.linkedin.com/in/srishti-gupta-6b1886293/"
     },
     {
       name: "Naman Mittal",
       role: "Treasurer",
-      description: "Some Description",
-      detailedDescription: "Detailed information about Naman Mittal goes here.",
+      description: "Managing resources with care.",
+      detailedDescription:
+        "Naman Mittal oversees the financial aspects of the organization. His meticulous planning ensures the optimal use of resources and transparency in operations.",
       image: "/team-member-5.jpeg",
-      email: "",
+      email: "naman.mittal@example.com",
       linkedin: "https://www.linkedin.com/in/naman--mittal/"
     },
     {
       name: "Naman Tomar",
       role: "Web Master",
-      description: "Some Description",
-      detailedDescription: "Detailed information about Naman Tomar goes here.",
-      image: "/team-member-6.jpeg",
-      email: "",
+      description: "Coding the future.",
+      detailedDescription:
+        "Naman Tomar is the technical backbone of the team, managing and developing the organization's digital presence. His expertise in web technologies is unparalleled.",
+      image: "/naman.jpg",
+      email: "naman.tomar@example.com",
       linkedin: "https://www.linkedin.com/in/navoren/"
     },
     {
       name: "Bhavya Sharma",
       role: "Research Head",
-      description: "Some Description",
+      description: "Driving innovation through research.",
       detailedDescription:
-      "Detailed information about Bhavya Sharma goes here.",
+        "Bhavya Sharma leads the research initiatives with a focus on finding innovative solutions to complex problems. Her analytical skills and dedication make her a vital team member.",
       image: "/team-member-7.jpeg",
-      email: "",
+      email: "bhavya.sharma@example.com",
       linkedin: "https://www.linkedin.com/in/bhavya-sharma-238620255/"
     },
     {
       name: "Chaitanya Anchal",
       role: "Public Relations Head",
-      description: "Some Description",
+      description: "Building bridges through communication.",
       detailedDescription:
-      "Detailed information about Chaitanya Anchal goes here.",
+        "Chaitanya Anchal is the voice of the organization, adept at creating strong relationships with stakeholders and ensuring a positive public image.",
       image: "/team-member-8.jpeg",
-      email: "",
+      email: "chaitanya.anchal@example.com",
       linkedin: "https://www.linkedin.com/in/chaitanya-anchal/"
     },
     {
       name: "Ashmi Sharma",
       role: "Operations Manager",
-      description: "Some Description",
-      detailedDescription: "Detailed information about Ashmi Sharma goes here.",
-      image: "/team-member-9.jpeg",
-      email: "",
+      description: "Ensuring seamless execution.",
+      detailedDescription:
+        "Ashmi Sharma is responsible for overseeing daily operations, ensuring efficiency, and managing projects with a results-oriented approach.",
+      image: "/ashmi.jpg",
+      email: "ashmi.sharma@example.com",
       linkedin: "https://www.linkedin.com/in/ashmi-sharma42/"
-    },
+    }
   ];
+  
 
   return (
     <section
