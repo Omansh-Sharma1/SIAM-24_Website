@@ -23,30 +23,46 @@ export default function Home() {
   const titleControls = useAnimation();
   const missionControls = useAnimation();
   const infiniteTestimonials = [
-    {
-      name: "Stanford University",
-      title: "Research Partner",
-      quote:
-        "Stanford University has been at the forefront of pioneering research in applied sciences, consistently pushing the boundaries of knowledge. Their work has the potential to transform the way we live and interact with the world around us, making significant advancements in various fields.",
-    },
-    {
-      name: "University of Oxford",
-      title: "Strategic Partner",
-      quote:
-        "The University of Oxford is committed to collaborating on transformative education initiatives. These initiatives aim to foster critical thinking, creativity, and innovation by providing students with the tools and knowledge necessary to address complex global challenges and drive positive change.",
-    },
-    {
-      name: "Google Research",
-      title: "Industry Collaborator",
-      quote:
-        "Google Research is leading the charge in driving innovation through data science and machine learning. By empowering individuals and organizations with cutting-edge technology, they enable their partners to make a positive impact and transform industries through informed decision-making.",
-    },
-    {
-      name: "Caltech",
-      title: "Academic Partner",
-      quote:
-        "Caltech is advancing interdisciplinary research in engineering, continuously pushing the boundaries of what is possible. Their work inspires future generations of scientists and engineers, fostering an environment of discovery and innovation that shapes the scientific landscape.",
-    },
+     {
+    name:  "Dr. Mark S Squillante",
+    title: "Distinguished Research Staff Member, IBM Research",
+    quote: "Exploring the foundations of probability, dynamics, and control, Dr. Squillante has made remarkable contributions to IBM's research in applied mathematics and computational sciences.",
+  },
+  {
+    name:  "Dr. Bonita V. Saunders",
+    title: "Research Mathematician, National Institute of Standards & Technology",
+    quote: "Dr. Saunders has significantly advanced the field of applied mathematics with her pioneering work in mathematical visualization and computational methods.",
+  },
+  {
+    name:  "Dr. Charles Allen Butler",
+    title: "Vice-President, Daniel H. Wagner Associates",
+    quote: "With a focus on computational solutions for defense and operations research, Dr. Butler exemplifies the application of mathematics in solving real-world challenges.",
+  },
+  {
+    name:  "Dr. Chandrajit Bajaj",
+    title: "Computational Applied Mathematics Chair, University of Texas",
+    quote: "Dr. Bajaj's leadership in computational visualization has revolutionized interdisciplinary research, bridging mathematics and advanced computing.",
+  },
+  {
+    name:    "Dr. George Biros",
+    title: "Professor, Oden Institute, University of Texas",
+    quote: "Dr. Biros's expertise in computational engineering and sciences has shaped innovative approaches to large-scale scientific computing.",
+  },
+  {
+    name:  "Dr. Alfred Hero",
+    title: "John H Holland Distinguished University Professor, University of Michigan",
+    quote: "Dr. Hero's research in statistical signal processing and data science has driven breakthroughs in mathematics and engineering applications.",
+  },
+  {
+    name:  "Dr. David A. Bader",
+    title: "Distinguished Professor, New Jersey Institute of Technology",
+    quote: "Dr. Bader's work in high-performance computing has set benchmarks in computational mathematics for complex data analysis.",
+  },
+  {
+    name:  "Dr. Chris Bemis",
+    title: "Co-Founder, X Cubed Capital Management",
+    quote: "Combining expertise in finance and mathematics, Dr. Bemis applies computational strategies to optimize investments and inspire innovation.",
+  },
   ];
 
   const [ref, inView] = useInView({
@@ -149,35 +165,45 @@ export default function Home() {
 
   const cardItems = [
     {
-      title: "Applied Mathematics",
-      description: "Advancing mathematical theories and applications to solve real-world problems across various domains.",
-      link: "/applied-mathematics"
+      name:  "Dr. Mark S Squillante",
+      title: "Distinguished Research Staff Member, IBM Research",
+      quote: "Exploring the foundations of probability, dynamics, and control, Dr. Squillante has made remarkable contributions to IBM's research in applied mathematics and computational sciences.",
     },
     {
-      title: "Data Science",
-      description: "Leveraging data-driven approaches to uncover insights and drive innovation in research and industry.",
-      link: "/data-science"
+      name:  "Dr. Bonita V. Saunders",
+      title: "Research Mathematician, National Institute of Standards & Technology",
+      quote: "Dr. Saunders has significantly advanced the field of applied mathematics with her pioneering work in mathematical visualization and computational methods.",
     },
     {
-      title: "Computational Science",
-      description: "Developing advanced computational methods and algorithms to tackle complex scientific challenges.",
-      link: "/computational-science"
+      name:  "Dr. Charles Allen Butler",
+      title: "Vice-President, Daniel H. Wagner Associates",
+      quote: "With a focus on computational solutions for defense and operations research, Dr. Butler exemplifies the application of mathematics in solving real-world challenges.",
     },
     {
-      title: "Research Collaboration",
-      description: "Fostering partnerships between academia and industry to accelerate scientific discoveries.",
-      link: "/collaboration"
+      name:  "Dr. Chandrajit Bajaj",
+      title: "Computational Applied Mathematics Chair, University of Texas",
+      quote: "Dr. Bajaj's leadership in computational visualization has revolutionized interdisciplinary research, bridging mathematics and advanced computing.",
     },
     {
-      title: "Education Innovation",
-      description: "Transforming mathematical education through modern pedagogical approaches and technology.",
-      link: "/education"
+      name:    "Dr. George Biros",
+      title: "Professor, Oden Institute, University of Texas",
+      quote: "Dr. Biros's expertise in computational engineering and sciences has shaped innovative approaches to large-scale scientific computing.",
     },
     {
-      title: "Community Engagement",
-      description: "Building a vibrant community of researchers, educators, and practitioners in mathematical sciences.",
-      link: "/community"
-    }
+      name:  "Dr. Alfred Hero",
+      title: "John H Holland Distinguished University Professor, University of Michigan",
+      quote: "Dr. Hero's research in statistical signal processing and data science has driven breakthroughs in mathematics and engineering applications.",
+    },
+    {
+      name:  "Dr. David A. Bader",
+      title: "Distinguished Professor, New Jersey Institute of Technology",
+      quote: "Dr. Bader's work in high-performance computing has set benchmarks in computational mathematics for complex data analysis.",
+    },
+    {
+      name:  "Dr. Chris Bemis",
+      title: "Co-Founder, X Cubed Capital Management",
+      quote: "Combining expertise in finance and mathematics, Dr. Bemis applies computational strategies to optimize investments and inspire innovation.",
+    },
   ];
 
   return (
@@ -312,23 +338,12 @@ export default function Home() {
     <AnimatedTestimonials
       testimonials={[
         {
-          src: "/images/university1.jpg",
-          name: "University of California",
-          designation: "Research Collaborator",
-          quote: "A partnership focused on advancing mathematical sciences.",
+          src: "/images/nvidia.png",  
+          name: "NVIDIA",
+          designation: "Technology Partner",
+          quote: "Driving advancements in AI and computational sciences through innovative technologies.",
         },
-        {
-          src: "/images/mit.jpg",
-          name: "MIT",
-          designation: "Research Partner",
-          quote: "Innovating solutions for industrial applications.",
-        },
-        {
-          src: "/images/harvard.jpg",
-          name: "Harvard University",
-          designation: "Strategic Partner",
-          quote: "Leading research in applied mathematics for industry.",
-        },
+         
       ]}
     />
   </div>
@@ -347,7 +362,7 @@ export default function Home() {
             animate={titleControls}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-[120%] md:text-[140%] lg:text-[160%]">Testimonials</span>
+            <span className="text-[120%] md:text-[140%] lg:text-[160%]">Renowned Speakers </span>
           </motion.h2>
           <InfiniteMovingCards 
             items={infiniteTestimonials} 
