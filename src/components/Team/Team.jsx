@@ -172,10 +172,10 @@ const Team = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent rounded-br-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
               <div className="absolute bottom-0 left-0 p-4 flex gap-4 items-center">
                 <a href="https://www.linkedin.com/in/vivekkumarsehgal/">
-                  <img src="linkedin.png" alt="LinkedIn" className="w-8 h-8" />
+                  <img src="/linkedin.png" alt="LinkedIn" className="w-8 h-8" />
                 </a>
                 <a href="mailto:vivek.sehgal@juitsolan.in">
-                  <img src="gmail.png" alt="Email" className="w-8 h-8" />
+                  <img src="/gmail.png" alt="Email" className="w-8 h-8" />
                 </a>
               </div>
 
@@ -274,7 +274,7 @@ const Team = () => {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="linkedin.png"
+                      src="/linkedin.png"
                       alt="LinkedIn"
                       className="w-8 h-8"
                     />
@@ -282,7 +282,7 @@ const Team = () => {
                   <a
                     href={`https://mail.google.com/mail/?view=cm&fs=1&to=${member.email}&su=Hello%20${member.name}&body=Hi%20${member.name},`} target="_blank" rel="noopener noreferrer"
                   >
-                    <img src="gmail.png" alt="Email" className="w-8 h-8" />
+                    <img src="/gmail.png" alt="Email" className="w-8 h-8" />
                   </a>
                 </div>
 

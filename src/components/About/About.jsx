@@ -60,7 +60,7 @@ export default function About() {
           >
             <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96">
               <img
-                src="SIAM_img.jpg"
+                src="/SIAM_img.jpg"
                 alt="About SIAM"
                 className="w-full h-full object-cover rounded-lg shadow-lg"
                 loading="lazy"
@@ -113,7 +113,7 @@ export default function About() {
           >
             <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-[30rem] overflow-hidden rounded-lg">
               <img
-                src="SIAM_JUIT_img.jpg"
+                src="/SIAM_JUIT_img.jpg"
                 alt="SIAM-JUIT"
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105 shadow-lg"
                 loading="lazy"
@@ -145,15 +145,16 @@ export default function About() {
         </section>
 
         <section className="space-y-12">
-          <div className="relative flex-1 mt-8 ml-8">
+          <div className="relative flex-1 mt-8 ml-8 justify-items-center flex flex-col items-center"> {/* Added flex and items-center */}
             <div className="absolute top-0 left-0 w-1/2 h-px bg-gradient-to-r from-transparent to-green-500"></div>
             <div className="h-16"></div>
 
             <div className="absolute top-0 right-0 w-1/2 h-px bg-gradient-to-l from-transparent to-green-500"></div>
-            <h2 className="text-5xl font-['Exo_2']  text-green-200 mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-6xl font-['Exo_2'] text-green-200 mb-4 md:mb-8">
               Why Join SIAM?
             </h2>
           </div>
+
           <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-8 px-4 md:px-0">
             {/* Left YouTube Preview */}
             <motion.a
@@ -166,7 +167,7 @@ export default function About() {
               transition={{ duration: 1 }}
             >
               <img
-                src="img1_prev.png"
+                src="/img1_prev.png"
                 alt="WATCH THE OFFICIAL VIDEO BY SIAM"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -281,7 +282,7 @@ export default function About() {
               transition={{ duration: 1 }}
             >
               <img
-                src="img2_prev.png"
+                src="/img2_prev.png"
                 alt="VISIT SIAM@JUIT ON YOUTUBE"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -302,16 +303,16 @@ export default function About() {
 
         <div className="h-16"></div>
         {/* Events Section */}
-<section className="space-y-8 md:space-y-12 mt-8 md:mt-16 px-4 md:px-8">
-  {/* Header */}
-  <div className="relative flex-1 mt-4 md:mt-8 ml-4 md:ml-8">
-    <div className="absolute top-0 left-0 w-1/2 h-px bg-gradient-to-r from-transparent to-green-500"></div>
-    <div className="absolute top-0 right-0 w-1/2 h-px bg-gradient-to-l from-transparent to-green-500"></div>
-    <div className="h-16 md:h-24"></div>
-    <h2 className="text-3xl md:text-4xl lg:text-6xl font-['Exo_2'] text-green-200 mb-4 md:mb-8">
-      Events
-    </h2>
-  </div>
+      <section className="space-y-8 md:space-y-12 mt-8 md:mt-16 px-4 md:px-8">  
+        <div className="relative flex-1 mt-8 ml-8 justify-items-center flex flex-col items-center"> {/* Added flex and items-center */}
+            <div className="absolute top-0 left-0 w-1/2 h-px bg-gradient-to-r from-transparent to-green-500"></div>
+            <div className="h-16"></div>
+
+            <div className="absolute top-0 right-0 w-1/2 h-px bg-gradient-to-l from-transparent to-green-500"></div>
+            <h2 className="text-3xl md:text-4xl lg:text-6xl font-['Exo_2'] text-green-200 mb-4 md:mb-8">
+              Events
+            </h2>
+          </div>
 
   {/* Events Timeline */}
   <div className="font-['Exo_2'] text-green-200 relative border-l-4 border-green-500">

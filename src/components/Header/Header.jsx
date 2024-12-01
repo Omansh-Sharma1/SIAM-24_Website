@@ -105,7 +105,7 @@ const Header = () => {
         <div className="lg:hidden flex items-start">
           <button
             onClick={toggleMenu}
-            className="text-gray-300 hover:text-orange-500 transition-all duration-300"
+            className="text-gray-300 hover:text-green-300 transition-all duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
