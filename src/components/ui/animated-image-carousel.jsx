@@ -47,7 +47,7 @@ export const AnimatedImageCarousel = ({
 
   return (
     <motion.div
-      className="relative w-full h-96 overflow-hidden"
+      className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 overflow-hidden rounded-lg items-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -72,7 +72,7 @@ export const AnimatedImageCarousel = ({
               duration: transitionDuration 
             }
           }}
-          className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+          className="absolute inset-0 w-full h-full object-cover"
         />
       </AnimatePresence>
     </motion.div>

@@ -322,28 +322,35 @@ export default function About() {
       date: "Mar 5, 2024",
       description:
         "Challenge your mathematical and programming skills with complex computational problems.",
-      img: "project_euler.jpg", // Replace with your actual image path or URL
+      img: "/events/project_euler.jpg", // Replace with your actual image path or URL
     },
     {
       title: "Auctionomics",
       date: "Mar 15, 2024",
       description:
         "Learn and participate in auctions with real-world economic scenarios.",
-      img: "auctionomics.jpg", // Replace with your actual image path or URL
+      img: "/events/auctionomics.jpg", // Replace with your actual image path or URL
     },
     {
       title: "Distinguished Speaker Seminar Series",
       date: "Mar 25, 2024",
       description:
         "Engage with experts discussing cutting-edge research and innovation.",
-      img: "speaker_seminar.jpg", // Replace with your actual image path or URL
+      img: "/events/speaker_seminar.png", // Replace with your actual image path or URL
     },
     {
       title: "Mathemagical Hacks",
       date: "Apr 5, 2024",
       description:
         "Combine your mathematical brilliance and coding prowess in this hackathon.",
-      img: "mathemagical_hacks.jpg", // Replace with your actual image path or URL
+      img: "/events/mathemagical_hacks.jpg", // Replace with your actual image path or URL
+    },
+    {
+      title: "Innovate with NVIDIA",
+      date: "Apr 5, 2024",
+      description:
+        "Combine your mathematical brilliance and coding prowess in this hackathon.",
+      img: "/events/innovate_with_nvidia.jpg", // Replace with your actual image path or URL
     },
     ].map((event, index) => (
       <motion.div
@@ -377,7 +384,8 @@ export default function About() {
         </div>
 
                 {/* Connecting Line */}
-                {index < 2 && (
+                {/* increase the index number acc to the number of events. */}
+                {index < 4 && (
                   <motion.div
                     className="hidden md:block absolute right-0 top-full h-16 w-0.5 bg-gradient-to-b from-green-300 to-transparent"
                     initial={{ scaleY: 0, opacity: 0 }}

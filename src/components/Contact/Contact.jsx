@@ -2,6 +2,9 @@ import React, { useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from 'emailjs-com';
 
+const serviceId = import.meta.env.VITE_SERVICE_ID;
+const templateID = import.meta.env.VITE_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 // Inline SVG Icons with responsive sizes
 const UserIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-6 md:h-6 text-green-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -47,7 +50,7 @@ export default function ContactRedesigned() {
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_z752c1j', 'template_xfctjx8', e.target, 'HTgZP7zAFTU1rTdzE')
+    emailjs.sendForm(serviceId, templateID, e.target, publicKey)
       .then((result) => {
           console.log(result.text);
           setNotification('Message sent successfully!');
@@ -68,29 +71,28 @@ export default function ContactRedesigned() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center py-8 md:py-16 px-4 md:px-8 relative">
+    <div className="min-h-screen bg-black text-white flex items-center justify-center py-8 md:py-16 px-4 md:px-8 relative mt-20 sm:mt-28 md:mt-8">
       <div className="background-image"></div>
       <div className="max-w-6xl mx-auto w-full z-10">
-        <motion.h1
+        <motion.div
           className="text-7xl tracking-wide font-['Exo_2'] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-100 text-center"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-         >
-          <h1 className="text-7xl tracking-wide font-['Exo_2'] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-100 text-center">
-            Get in Touch
-          </h1>
-          </motion.h1>
-          <motion.div 
+        >
+          Get in Touch
+        </motion.div>
+        <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-8 md:mb-12"
-          >
-          <div className="space-y-2 md:space-y-4 mt-4 md:mt-8"/>
-          <p className="text-sm md:text-base lg:text-lg text-gray-400 mbmax-w-2xl mx-auto">
-            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
-          </p>
+        >
+          <div className="space-y-2 md:space-y-4 mt-4 md:mt-8">
+            <p className="text-sm md:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto">
+              Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            </p>
+          </div>
         </motion.div>
 
         {notification && (
@@ -170,8 +172,8 @@ export default function ContactRedesigned() {
           >
             <div className="flex items-start space-x-2">
               <MapPinIcon />
-              <div className="flex-1">
-                <h3 className="text-lg md:text-xl font-semibold mb-2">Location</h3>
+              <div className="flex-1 items-center">
+                <h3 className="text-lg md:text-xl font-semibold mb-2 ">Location</h3>
                 <p className="text-sm md:text-base text-gray-400">
                   Jaypee University of Information Technology, Waknaghat - 173234, Solan, India
                 </p>
