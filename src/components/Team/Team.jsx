@@ -173,10 +173,14 @@ const Team = () => {
             {/* Hover Gradient & Icons */}
             <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent rounded-br-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
               <div className="absolute bottom-0 left-0 p-4 flex gap-4 items-center">
-                <a href="https://www.linkedin.com/in/vivekkumarsehgal/">
+                <a target="_blank"
+                      rel="noopener noreferrer" 
+                      href="https://www.linkedin.com/in/vivekkumarsehgal/">
                   <img src="/linkedin.png" alt="LinkedIn" className="w-8 h-8" />
                 </a>
-                <a href="mailto:vivek.sehgal@juitsolan.in">
+                <a target="_blank"
+                      rel="noopener noreferrer"
+                      href="mailto:vivek.sehgal@juitsolan.in">
                   <img src="/gmail.png" alt="Email" className="w-8 h-8" />
                 </a>
               </div>
