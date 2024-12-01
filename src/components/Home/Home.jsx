@@ -147,17 +147,17 @@ export default function Home() {
     {
       src: "Question_mark.jpg",
       title: "Who are we?",
-      link: "/about", // Matches About.jsx
+      link: "/about/", // Matches About.jsx
     },
     {
       src: "Contactus.jpg",
       title: "Get in Touch",
-      link: "/contact", // Matches Contact.jsx
+      link: "/contact/", // Matches Contact.jsx
     },
     {
       src: "MeetOurTeam.jpg",
       title: "Meet Our Team",
-      link: "/team", // Matches Team.jsx
+      link: "/team/", // Matches Team.jsx
     },
   ];
   
