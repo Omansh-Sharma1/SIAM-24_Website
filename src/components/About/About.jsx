@@ -193,7 +193,7 @@ export default function About() {
                   <li key={index} className="mb-3 md:mb-4">
                     <button
                       onClick={() => toggleExpansion(index)}
-                      className="flex items-center justify-between w-full text-left hover:text-green-400 transition-colors duration-300"
+                      className="flex items-center justify-between w-full text-left hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-100 transition-colors duration-300"
                     >
                       <span className="pr-2">{point}</span>
                       <svg

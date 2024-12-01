@@ -14,7 +14,7 @@ export const AnimatedImageCarousel = ({
     const interval = setInterval(() => {
       setDirection(1);
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, intervalDuration * 3000);
+    }, intervalDuration * 1000);
 
     return () => clearInterval(interval);
   }, [images, intervalDuration]);

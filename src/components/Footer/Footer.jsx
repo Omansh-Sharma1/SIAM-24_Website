@@ -30,13 +30,13 @@ export default function Footer() {
             <h3 className="text-2xl font-['Exo_2'] font-semibold text-white mb-4">Resources</h3>
             <ul className="font-roboto text-medium font-semibold space-y-4 text-gray-300">
               <li>
-                <Link to="/" className="hover:text-green-400 transition duration-300">Home</Link>
+                <Link to="/" className="hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-100 transition duration-300">Home</Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-green-400 transition duration-300">About</Link>
+                <Link to="/about" className="hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-100 transition duration-300">About</Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-green-400 transition duration-300">Contact</Link>
+                <Link to="/contact" className="hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-100 transition duration-300">Contact</Link>
               </li>
             </ul>
           </div>
@@ -48,7 +48,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://www.instagram.com/siamjuit"
-                  className="hover:text-green-400 transition duration-300"
+                  className="hover:text-transparent font-semibold bg-clip-text bg-gradient-to-r from-green-300 to-green-100 transition duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -58,7 +58,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://x.com/siamjuit"
-                  className="hover:text-green-400 transition duration-300"
+                  className="hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-100 transition duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -68,7 +68,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://www.linkedin.com/company/siamjuit"
-                  className="hover:text-green-400 transition duration-300"
+                  className="hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-100 transition duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -85,7 +85,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://www.siam.org/"
-                  className="hover:text-green-400 transition duration-300"
+                  className="hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-100 transition duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

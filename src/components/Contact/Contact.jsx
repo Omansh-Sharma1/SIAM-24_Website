@@ -71,16 +71,24 @@ export default function ContactRedesigned() {
     <div className="min-h-screen bg-black text-white flex items-center justify-center py-8 md:py-16 px-4 md:px-8 relative">
       <div className="background-image"></div>
       <div className="max-w-6xl mx-auto w-full z-10">
-        <motion.div 
+        <motion.h1
+          className="text-7xl tracking-wide font-['Exo_2'] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-100 text-center"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+         >
+          <h1 className="text-7xl tracking-wide font-['Exo_2'] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-100 text-center">
+            Get in Touch
+          </h1>
+          </motion.h1>
+          <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-8 md:mb-12"
-        >
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-4">
-            Get in Touch
-          </h1>
-          <p className="text-sm md:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto">
+          >
+          <div className="space-y-2 md:space-y-4 mt-4 md:mt-8"/>
+          <p className="text-sm md:text-base lg:text-lg text-gray-400 mbmax-w-2xl mx-auto">
             Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
         </motion.div>

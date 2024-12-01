@@ -78,8 +78,8 @@ const Team = () => {
       role: "Research Head",
       description: "Driving innovation through research.",
       detailedDescription:
-        "Bhavya Sharma leads the research initiatives with a focus on finding innovative solutions to complex problems. Her analytical skills and dedication make her a vital team member.",
-      image: "/team-member-7.jpeg",
+        "Bhavya Sharma leads the research initiatives with a focus on finding innovative solutions to complex problems. His analytical skills and dedication make her a vital team member.",
+      image: "/team-member-7.jpg",
       email: "bhavya.sharma@example.com",
       linkedin: "https://www.linkedin.com/in/bhavya-sharma-238620255/"
     },
@@ -165,8 +165,7 @@ const Team = () => {
               Professor & Head of Dept. of CSE&IT
             </p>
             <p className="mt-2 text-gray-300 font-['Exo_2'] text-sm">
-              " as the Founding Faculty Advisor, has played a
-              pivotal role...
+              " The founder of SIAM-JUIT. "
             </p>
 
             {/* Hover Gradient & Icons */}
