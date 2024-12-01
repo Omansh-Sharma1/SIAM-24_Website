@@ -145,17 +145,17 @@ export default function Home() {
 
   const focusCardsData = [
     {
-      src: "Question_mark.jpg",
+      src: "/Question_mark.jpg",
       title: "Who are we?",
       link: "/about/", // Matches About.jsx
     },
     {
-      src: "Contactus.jpg",
+      src: "/Contactus.jpg",
       title: "Get in Touch",
       link: "/contact/", // Matches Contact.jsx
     },
     {
-      src: "MeetOurTeam.jpg",
+      src: "/MeetOurTeam.jpg",
       title: "Meet Our Team",
       link: "/team/", // Matches Team.jsx
     },
