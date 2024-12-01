@@ -78,7 +78,7 @@ const Team = () => {
       role: "Research Head",
       description: "Driving innovation through research.",
       detailedDescription:
-        "Bhavya Sharma leads the research initiatives with a focus on finding innovative solutions to complex problems. His analytical skills and dedication make her a vital team member.",
+        "Bhavya Sharma leads the research initiatives with a focus on finding innovative solutions to complex problems. His analytical skills and dedication make him a vital team member.",
       image: "/team-member-7.jpg",
       email: "bhavya.sharma@example.com",
       linkedin: "https://www.linkedin.com/in/bhavya-sharma-238620255/"
