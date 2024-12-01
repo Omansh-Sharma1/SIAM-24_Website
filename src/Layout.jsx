@@ -8,7 +8,7 @@ function Layout() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow mx-4 md:mx-12"> {/* Added horizontal margin here */}
         <ScrollToTop /> {/* Add ScrollToTop to reset scroll on route change */}
         <Outlet />
       </main>
