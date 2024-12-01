@@ -142,7 +142,7 @@ const Header = () => {
             <NavLink
               to="/"
               onClick={() => handleButtonClick("/")}
-              className="nav-links px-6 py-3 rounded-lg hover:text-orange-500 transition-all duration-300"
+              className="nav-links px-6 py-3 rounded-lg hover:text-green-300 transition-all duration-300"
             >
               Home
             </NavLink>
@@ -151,7 +151,7 @@ const Header = () => {
             <NavLink
               to="/about"
               onClick={() => handleButtonClick("/about")}
-              className="nav-links px-6 py-3 rounded-lg hover:text-orange-500 transition-all duration-300"
+              className="nav-links px-6 py-3 rounded-lg hover:text-green-300 transition-all duration-300"
             >
               About
             </NavLink>
@@ -160,7 +160,7 @@ const Header = () => {
           <NavLink
               to="/team"
               onClick={() => handleButtonClick("/team")}
-              className="nav-links px-6 py-3 rounded-lg hover:text-orange-500 transition-all duration-300"
+              className="nav-links px-6 py-3 rounded-lg hover:text-green-300 transition-all duration-300"
             >
               Team
             </NavLink>
@@ -169,7 +169,7 @@ const Header = () => {
           <NavLink
               to="/contact"
               onClick={() => handleButtonClick("/contact")}
-              className="nav-links px-6 py-3 rounded-lg hover:text-orange-500 transition-all duration-300"
+              className="nav-links px-6 py-3 rounded-lg hover:text-green-300 transition-all duration-300"
             >
               Contact
             </NavLink>
