@@ -235,7 +235,7 @@ export default function Home() {
         </div>
 
         {/* Carousel/Image Section - Responsive Adjustment */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end space-x-12 lg:space-x-16 items-center sm-shrink-0">
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end space-x-18 lg:space-x-16 items-center sm-shrink-0">
   <div className="flex-grow"></div> {/* Spacer */}
   <AnimatedImageCarousel
     images={[
@@ -246,7 +246,7 @@ export default function Home() {
       "5.jpg",
     ]}
     transitionDuration={1.5}
-    className="max-w-full sm:max-w-md lg:max-w-full"
+    className="max-w-full sm:max-w-md lg:max-w-full justify-center"
   />
 </div>
       </motion.div>
@@ -323,7 +323,7 @@ export default function Home() {
   </motion.h2>
 
   {/* Responsive Testimonials Section */}
-  <div className="mt-8 md:mt-10 lg:mt-12">
+  <div className="mt-8 md:mt-10 lg:mt-12 ">
     <AnimatedTestimonials
       testimonials={[
         {
@@ -336,8 +336,6 @@ export default function Home() {
       ]}
     />
   </div>
-
-
         {/* Infinite Moving Cards Section - Mobile Responsiveness */}
         <div className="relative">
         <div className="absolute top-0 left-0 w-1/2 h-px bg-gradient-to-r from-transparent to-green-500 z-10"></div>

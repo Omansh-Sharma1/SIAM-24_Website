@@ -19,8 +19,8 @@ const Team = () => {
       description: "Leading with vision and purpose.",
       detailedDescription:
         "Anant Sharma has been instrumental in fostering a culture of innovation and collaboration. His leadership skills and strategic thinking drive the organization towards achieving its goals.",
-      image: "/Anant.jpg",
-      email: "anant.sharma@example.com",
+      image: "/Council/Anant.jpg",
+      email: "sharmanant07@gmail.com",
       linkedin: "https://www.linkedin.com/in/anant-sharma-/"
     },
     {
@@ -29,8 +29,8 @@ const Team = () => {
       description: "Empowering the team with excellence.",
       detailedDescription:
         "Parth Gupta excels in operations and planning, ensuring seamless execution of all initiatives. His ability to inspire and motivate the team is unparalleled.",
-      image: "/team-member-2.jpg",
-      email: "parth.gupta@example.com",
+      image: "./Council/Parth.jpg",
+      email: "gupta.pag@gmail.com",
       linkedin: "https://www.linkedin.com/in/-parth-gupta-/"
     },
     {
@@ -39,8 +39,8 @@ const Team = () => {
       description: "Organized and efficient.",
       detailedDescription:
         "Vasu Bhatia ensures the smooth functioning of all administrative activities. With a keen eye for detail, Vasu plays a crucial role in documenting and managing team activities.",
-      image: "/team-member-3.jpeg",
-      email: "vasu.bhatia@example.com",
+      image: "./Council/Vasu.jpg",
+      email: "vasubhatia163@gmail.com",
       linkedin: "https://www.linkedin.com/in/vasubhatia16/"
     },
     {
@@ -49,8 +49,8 @@ const Team = () => {
       description: "Collaborative and dynamic.",
       detailedDescription:
         "Srishti Gupta is known for her proactive approach and dedication. She works closely with the team to ensure all projects are executed with precision and efficiency.",
-      image: "/team-member-4.jpeg",
-      email: "srishti.gupta@example.com",
+      image: "./Council/Srishti.jpg",
+      email: "srishtiguptadelhi9@gmail.com",
       linkedin: "https://www.linkedin.com/in/srishti-gupta-6b1886293/"
     },
     {
@@ -59,8 +59,8 @@ const Team = () => {
       description: "Managing resources with care.",
       detailedDescription:
         "Naman Mittal oversees the financial aspects of the organization. His meticulous planning ensures the optimal use of resources and transparency in operations.",
-      image: "/team-member-5.jpeg",
-      email: "naman.mittal@example.com",
+      image: "./Council/NamanMittal.jpg",
+      email: "namanmittal501@gmail.com",
       linkedin: "https://www.linkedin.com/in/naman--mittal/"
     },
     {
@@ -69,8 +69,8 @@ const Team = () => {
       description: "Coding the future.",
       detailedDescription:
         "Naman Tomar is the technical backbone of the team, managing and developing the organization's digital presence. His expertise in web technologies is unparalleled.",
-      image: "/naman.jpg",
-      email: "naman.tomar@example.com",
+      image: "./Council/NamanTomar.jpg",
+      email: "namantomar1453@gmail.com",
       linkedin: "https://www.linkedin.com/in/navoren/"
     },
     {
@@ -79,7 +79,7 @@ const Team = () => {
       description: "Driving innovation through research.",
       detailedDescription:
         "Bhavya Sharma leads the research initiatives with a focus on finding innovative solutions to complex problems. His analytical skills and dedication make him a vital team member.",
-      image: "/team-member-7.jpg",
+      image: "./Council/Bhavya.jpg",
       email: "bhavya.sharma@example.com",
       linkedin: "https://www.linkedin.com/in/bhavya-sharma-238620255/"
     },
@@ -89,8 +89,8 @@ const Team = () => {
       description: "Building bridges through communication.",
       detailedDescription:
         "Chaitanya Anchal is the voice of the organization, adept at creating strong relationships with stakeholders and ensuring a positive public image.",
-      image: "/team-member-8.jpeg",
-      email: "chaitanya.anchal@example.com",
+      image: "./Council/Chaitanya.jpg",
+      email: "chaitanyaanchal12@gmail.com",
       linkedin: "https://www.linkedin.com/in/chaitanya-anchal/"
     },
     {
@@ -99,8 +99,8 @@ const Team = () => {
       description: "Ensuring seamless execution.",
       detailedDescription:
         "Ashmi Sharma is responsible for overseeing daily operations, ensuring efficiency, and managing projects with a results-oriented approach.",
-      image: "/ashmi.jpg",
-      email: "ashmi.sharma@example.com",
+      image: "./Council/Ashmi.jpg",
+      email: "sharmaashmi142004@gmail.com",
       linkedin: "https://www.linkedin.com/in/ashmi-sharma42/"
     }
   ];

@@ -76,6 +76,9 @@ export const AnimatedTestimonials = ({
                     width={500}
                     height={500}
                     className="h-full w-full rounded-3xl object-cover object-center"
+                    style={{
+                      maxHeight: 'calc(100vh - 80px)' // Prevents image from overlapping header
+                    }}
                   />
                 </motion.div>
               ))}

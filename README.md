@@ -59,5 +59,15 @@ Contributions are encouraged! To contribute:
 3. Commit your changes and push to your branch.
 4. Submit a pull request detailing your changes.
 
+## Setting up Environment Variables
+
+1. Copy the `.env.example` file in your local repository:
+   ```bash
+   cp .env.example .env
+   ```
+2. Rename it to .env
+3. Add the required values in your .env file.
+4. Do not commit the .env file back to the repository.
+
 ## **License**
 This project is licensed under the MIT License.
