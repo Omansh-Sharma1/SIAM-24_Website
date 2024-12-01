@@ -91,7 +91,8 @@ const Team = () => {
         "Chaitanya Anchal is the voice of the organization, adept at creating strong relationships with stakeholders and ensuring a positive public image.",
       image: "/./Council/Chaitanya.jpg",
       email: "chaitanyaanchal12@gmail.com",
-      linkedin: "https://www.linkedin.com/in/chaitanya-anchal/"
+      linkedin: "https://www.linkedin.com/in/chaitanya-anchal/",
+    
     },
     {
       name: "Ashmi Sharma",
@@ -101,7 +102,8 @@ const Team = () => {
         "Ashmi Sharma is responsible for overseeing daily operations, ensuring efficiency, and managing projects with a results-oriented approach.",
       image: "/./Council/Ashmi.jpg",
       email: "sharmaashmi142004@gmail.com",
-      linkedin: "https://www.linkedin.com/in/ashmi-sharma42/"
+      linkedin: "https://www.linkedin.com/in/ashmi-sharma42/",
+    
     }
   ];
   
@@ -274,6 +276,8 @@ const Team = () => {
                     rel="noopener noreferrer"
                   >
                     <img
+                      target="_blank"
+                      rel="noopener noreferrer"
                       src="/linkedin.png"
                       alt="LinkedIn"
                       className="w-8 h-8"
