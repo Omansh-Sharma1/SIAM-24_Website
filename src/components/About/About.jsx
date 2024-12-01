@@ -345,13 +345,6 @@ export default function About() {
         "Combine your mathematical brilliance and coding prowess in this hackathon.",
       img: "/events/mathemagical_hacks.jpg", // Replace with your actual image path or URL
     },
-    {
-      title: "Innovate with NVIDIA",
-      date: "Apr 5, 2024",
-      description:
-        "Combine your mathematical brilliance and coding prowess in this hackathon.",
-      img: "/events/innovate_with_nvidia.jpg", // Replace with your actual image path or URL
-    },
     ].map((event, index) => (
       <motion.div
         key={index}
